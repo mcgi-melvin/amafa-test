@@ -19,5 +19,5 @@ function form_submit()
 
 function toggle_menu()
 {
-
+    document.querySelector('.menu-bar').classList.toggle("show")
 }

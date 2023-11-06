@@ -17,16 +17,25 @@
             </div>
             <div class="menu">
                 <nav class="hidden sm:block">
-                    <ul class="m-0 p-0">
+                    <ul>
                         <li class="inline-block"><a href="/#about">About</a></li>
                         <li class="inline-block"><a href="/#features">Features</a></li>
                         <li class="inline-block"><a href="/#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <a class="sm:hidden block" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+                <a class="sm:hidden block" href="javascript:void(0)" onclick="toggle_menu()"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
     </header>
+
+    <div class="menu-bar fixed w-full h-full flex items-center justify-center">
+        <a class="close text-white absolute" href="javascript:void(0)" onclick="toggle_menu()"><i class="fa-solid fa-xmark"></i></a>
+        <ul class="text-center text-white font-bold">
+            <li class="mb-3"><a href="/#about" onclick="toggle_menu()">About</a></li>
+            <li class="mb-3"><a href="/#features" onclick="toggle_menu()">Features</a></li>
+            <li><a href="/#contact" onclick="toggle_menu()">Contact</a></li>
+        </ul>
+    </div>
 
     <main>
         <?php if( hero_contents() ): ?>
@@ -94,7 +103,7 @@
                 <div class="section-header text-center">
                     <h3 class="text-peach font-bold heading">Features</h3>
                 </div>
-                <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-4">
+                <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-6">
                     <?php foreach ( features_contents() as $i => $content ): ?>
                         <div class="feature-item">
                             <div class="feature-item-image mb-5">
