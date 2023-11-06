@@ -1,0 +1,231 @@
+@import "tailwindUtil.css"
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap')
+
+@import "../../fontawesome/css/all.min.css"
+
+@import "../../slick/slick.css"
+@import "../../slick/slick-theme.css"
+
+html
+    scroll-behavior: smooth
+    overflow-x: hidden
+
+body
+    font-family: var(--font-secondary)
+    font-size: 18px
+    overflow-x: hidden
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    line-height: 1
+
+h1
+    font-size: var(--s50)
+
+h2
+    font-size: var(--s45)
+
+h3
+    font-size: var(--s40)
+
+h4
+    font-size: var(--35)
+
+h5
+    font-size: var(--s30)
+
+h6
+    font-size: var(--s25)
+
+.heading
+    position: relative
+    display: inline-block
+    &::after
+        content: ""
+        position: absolute
+        width: 70%
+        height: 5px
+        background-color: var(--color-peach)
+        bottom: -20px
+        left: 50%
+        transform: translateX(-50%)
+
+.sub-heading
+    color: var(--color-gray)
+    font-size: 15px
+    font-weight: 700
+    letter-spacing: 2px
+    text-transform: uppercase
+
+.button
+    font-size: 15px
+    font-weight: 700
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    min-width: 200px
+    border-style: solid
+    border-width: 2px
+    border-radius: 30px
+    padding: 13px 25px
+    transition: all 0.3s ease-in-out
+    &.dark-blue
+        background-color: var(--color-dark-blue)
+        border-color: var(--color-dark-blue)
+        color: white
+        &:hover
+            background-color: transparent
+            color: var(--color-dark-blue)
+
+    &.orange
+        background-color: var(--color-orange)
+        border-color: var(--color-orange)
+        color: var(--color-dark-blue)
+        &:hover
+            background-color: transparent
+            color: var(--color-orange)
+
+    &.peach
+        &-outline
+            background-color: transparent
+            border-color: var(--color-peach)
+            color: var(--color-peach)
+            &:hover
+                background-color: var(--color-peach)
+                border-color: var(--color-peach)
+                color: var(--color-dark-blue)
+
+header
+    background-color: #fff
+    height: 100px
+    z-index: 3
+    nav
+        ul
+            li
+                a
+                    font-weight: bold
+                    padding: 0 20px
+    @media (max-width: 767px)
+        nav
+            display: none
+
+main
+    padding-top: 100px
+
+#hero
+    .hero-item
+        background-color: var(--color-dark-blue)
+        background-blend-mode: luminosity
+        height: 800px
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(0, 0, 0, 0.6)
+        .item-content
+            max-width: 800px
+            width: 100%
+            margin: auto
+
+
+#about
+    .column-text
+        position: relative
+        padding: 150px 100px
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            width: 50px
+            height: 100%
+        &.right
+            &::before
+                right: -49px
+                background-color: var(--color-orange)
+                clip-path: polygon(100% 50%, 0 100%, 0 0)
+        &.left
+            &::before
+                left: -49px
+                background-color: var(--color-peach)
+                clip-path: polygon(0 50%, 100% 100%, 100% 0)
+    .column-image
+        min-height: 400px
+    @media (max-width: 1280px)
+        .column-text
+            padding: 100px 70px
+    @media (max-width: 1024px)
+        .column-text
+            &.right,
+            &.left
+                &::before
+                    width: 100%
+                    height: 50px
+                    left: 0
+                    clip-path: polygon(50% 0, 100% 100%, 0 100%)
+                    top: -49px
+
+
+#features
+    background-color: #000
+    background-image: url("/assets/images/features.jpg")
+    background-blend-mode: luminosity
+    padding: 100px 0
+    .section-header
+        margin: 0 0 100px
+    .feature-item
+        background-color: #fff
+        border-radius: 30px
+        padding: 50px 30px
+
+#contact
+    background-image: url("/assets/images/contact.jpg")
+    background-color: var(--color-peach)
+    padding: 150px 0
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(243, 240, 202, 0.8)
+    .content-wrapper
+        padding: 100px 50px
+        .description
+            font-size: 22px
+        .social
+            ul
+                li
+                    &:not(:last-child)
+                        margin: 0 15px 0 0
+        form
+            background-color: #fff
+            padding: 50px
+            .form-field
+                label
+                    display: block
+                    margin: 0 0 5px
+                input
+                    font-size: 15px
+                    height: 50px
+                    padding: 12px 20px
+                textarea
+                    font-size: 15px
+                    padding: 12px 20px
+                &:not(:last-child)
+                    margin: 0 0 30px
+    @media (max-width: 1024px)
+        padding: 70px 0
+    @media (max-width: 767px)
+        .content-wrapper
+            padding: 70px 30px
+        .content-wrapper form
+            padding: 30px

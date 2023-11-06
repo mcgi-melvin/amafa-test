@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-blue: #3876BF;
+        --color-dark-blue: #192655;
+        --color-orange: #E1AA74;
+        --color-peach: #F3F0CA;
+        --color-gray: #8492a6;
+        --color-light-gray: #d3dce6;
+        --color-dark-gray: #273444;
+
+        --font-primary: 'Roboto Condensed';
+        --font-secondary: 'Poppins';
+
+        --s50: 50px;
+        --s45: 45px;
+        --s40: 40px;
+        --s35: 35px;
+        --s30: 30px;
+        --s25: 25px;
+    }
+}
