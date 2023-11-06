@@ -132,15 +132,15 @@
                                 Sometimes a website can’t answer every question. If that’s the case for you, shoot us an email and let’s have a conversation.
                             </div>
                             <div class="contact mt-10">
-                                <div class="contact-item flex items-center mb-5">
+                                <div class="contact-item flex items-center mb-5 text-peach">
                                     <i class="fa-solid fa-phone mr-5"></i>
                                     <a href="tel:01 234 5678">01 234 56789</a>
                                 </div>
-                                <div class="contact-item flex items-center mb-5">
+                                <div class="contact-item flex items-center mb-5 text-peach">
                                     <i class="fa-solid fa-envelope mr-5"></i>
                                     <a href="mailto:sample@email.com">sample@email.com</a>
                                 </div>
-                                <div class="contact-item flex items-center">
+                                <div class="contact-item flex items-center text-peach">
                                     <i class="fa-solid fa-map-location mr-5"></i>
                                     <p>48 Bapaume Road Mount Luke, Queensland(QLD), 4352</p>
                                 </div>
@@ -149,7 +149,7 @@
                             <div class="social mt-10">
                                 <ul>
                                     <?php foreach ( socials() as $item ): ?>
-                                        <li class="inline-block"><a class="text-4xl" href="<?= $item['link'] ?>" target="_blank"><?= $item['icon'] ?></a></li>
+                                        <li class="inline-block"><a class="text-peach text-4xl" href="<?= $item['link'] ?>" target="_blank"><?= $item['icon'] ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
