@@ -1,4 +1,4 @@
-<?php require_once "functions.php" ?>
+<?php require_once "config.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
