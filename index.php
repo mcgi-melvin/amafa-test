@@ -125,7 +125,7 @@
         <section id="contact" class="relative bg-cover bg-no-repeat">
             <div class="container mx-auto px-5 relative">
                 <div class="content-wrapper bg-orange">
-                    <div class="flex gap-10 xl:flex-nowrap flex-wrap">
+                    <div class="flex items-center gap-10 xl:flex-nowrap flex-wrap">
                         <div class="xl:w-1/2 w-full">
                             <h3 class="font-bold">Get in touch with us</h3>
                             <div class="description mt-10">
