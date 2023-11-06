@@ -122,8 +122,8 @@ header nav ul li a {
   padding: 0 20px;
 }
 @media (max-width: 767px) {
-  header nav {
-    display: none;
+  header .logo img {
+    width: 200px;
   }
 }
 
@@ -187,6 +187,11 @@ main {
     left: 0;
     clip-path: polygon(50% 0, 100% 100%, 0 100%);
     top: -49px;
+  }
+}
+@media (max-width: 767px) {
+  #about .column-text {
+    padding: 70px 30px;
   }
 }
 

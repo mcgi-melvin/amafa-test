@@ -14,4 +14,10 @@ function form_submit()
     event.preventDefault()
 
     console.log( event )
+    alert("Message Sent")
+}
+
+function toggle_menu()
+{
+
 }

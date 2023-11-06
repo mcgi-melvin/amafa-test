@@ -16,13 +16,14 @@
                 <img class="w-full" src="/assets/images/logo.svg" alt="Site Logo" />
             </div>
             <div class="menu">
-                <nav>
+                <nav class="hidden sm:block">
                     <ul class="m-0 p-0">
                         <li class="inline-block"><a href="/#about">About</a></li>
                         <li class="inline-block"><a href="/#features">Features</a></li>
                         <li class="inline-block"><a href="/#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <a class="sm:hidden block" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
     </header>
@@ -39,7 +40,7 @@
                             <?= $content['description'] ?>
                         </div>
                         <?php if( $content['buttons'] ): ?>
-                            <div class="button-container mt-7">
+                            <div class="button-container flex flex-wrap items-center justify-center gap-3 mt-7">
                                 <?php foreach ( $content['buttons'] as $i => $button ):
                                     $btn_class = "peach-outline";
                                     if( $i % 2 !== 0 ) $btn_class = "orange"

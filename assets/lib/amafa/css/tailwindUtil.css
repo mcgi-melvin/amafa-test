@@ -22,4 +22,47 @@
         --s30: 30px;
         --s25: 25px;
     }
+
+    @media(max-width: 1280px) {
+        :root {
+            --s50: 45px;
+            --s45: 42px;
+            --s40: 37px;
+            --s35: 32px;
+            --s30: 28px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        :root {
+            --s50: 42px;
+            --s45: 40px;
+            --s40: 34px;
+            --s35: 30px;
+            --s30: 25px;
+            --s25: 22px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        :root {
+            --s50: 40px;
+            --s45: 38px;
+            --s40: 31px;
+            --s35: 28px;
+            --s30: 22px;
+            --s25: 20px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        :root {
+            --s50: 38px;
+            --s45: 35px;
+            --s40: 28px;
+            --s35: 25px;
+            --s30: 20px;
+            --s25: 18px;
+        }
+    }
 }

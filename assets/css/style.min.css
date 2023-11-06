@@ -456,6 +456,49 @@ video {
   --s25: 25px;
 }
 
+@media(max-width: 1280px) {
+  :root {
+    --s50: 45px;
+    --s45: 42px;
+    --s40: 37px;
+    --s35: 32px;
+    --s30: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --s50: 42px;
+    --s45: 40px;
+    --s40: 34px;
+    --s35: 30px;
+    --s30: 25px;
+    --s25: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --s50: 40px;
+    --s45: 38px;
+    --s40: 31px;
+    --s35: 28px;
+    --s30: 22px;
+    --s25: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --s50: 38px;
+    --s45: 35px;
+    --s40: 28px;
+    --s35: 25px;
+    --s30: 20px;
+    --s25: 18px;
+  }
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -635,6 +678,10 @@ video {
   margin-top: 1.75rem;
 }
 
+.block{
+  display: block;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -649,6 +696,10 @@ video {
 
 .grid{
   display: grid;
+}
+
+.hidden{
+  display: none;
 }
 
 .w-full{
@@ -673,6 +724,10 @@ video {
 
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
 }
 
 .gap-4{
@@ -8082,8 +8137,8 @@ header nav ul li a {
 }
 
 @media (max-width: 767px) {
-  header nav {
-    display: none;
+  header .logo img {
+    width: 200px;
   }
 }
 
@@ -8158,6 +8213,12 @@ main {
     -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
             clip-path: polygon(50% 0, 100% 100%, 0 100%);
     top: -49px;
+  }
+}
+
+@media (max-width: 767px) {
+  #about .column-text {
+    padding: 70px 30px;
   }
 }
 
@@ -8244,6 +8305,16 @@ main {
 
   #contact .content-wrapper form {
     padding: 30px;
+  }
+}
+
+@media (min-width: 640px){
+  .sm\:block{
+    display: block;
+  }
+
+  .sm\:hidden{
+    display: none;
   }
 }
 
