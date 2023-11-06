@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page with Tailwind CSS</title>
 
-    <link rel="stylesheet" href="/assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
 </head>
 <body>
 
     <header class="flex items-center w-full px-5 fixed">
         <div class="flex items-center justify-between w-full">
             <div class="logo">
-                <img class="w-full" src="/assets/images/logo.svg" alt="Site Logo" />
+                <img class="w-full" src="assets/images/logo.svg" alt="Site Logo" />
             </div>
             <div class="menu">
                 <nav class="hidden sm:block">
@@ -184,9 +184,9 @@
         </section>
     </footer>
 
-    <script src="/assets/lib/amafa/js/jquery.js"></script>
-    <script src="/assets/lib/fontawesome/js/all.min.js"></script>
-    <script src="/assets/lib/slick/slick.min.js"></script>
-    <script src="/assets/lib/amafa/js/script.js"></script>
+    <script src="assets/lib/amafa/js/jquery.js"></script>
+    <script src="assets/lib/fontawesome/js/all.min.js"></script>
+    <script src="assets/lib/slick/slick.min.js"></script>
+    <script src="assets/lib/amafa/js/script.js"></script>
 </body>
 </html>
